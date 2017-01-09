@@ -101,11 +101,11 @@ export NVM_DIR=~/.nvm
 # eval $(thefuck --alias)
 
 # jenv
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+# export PATH="$HOME/.jenv/bin:$PATH"
+# eval "$(jenv init -)"
 
-#rbenv
-eval "$(rbenv init -)"
+# rbenv
+# eval "$(rbenv init -)"
 
 # syntax highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
