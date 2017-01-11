@@ -69,6 +69,10 @@ else
   export EDITOR='vim'
 fi
 
+# Command history
+unsetopt inc_append_history
+unsetopt share_history
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -81,8 +85,8 @@ fi
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="subl ~/.zshrc"
-alias ohmyzsh="subl ~/.oh-my-zsh"
+alias zshconfig="$EDITOR ~/.zshrc"
+alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
 alias gotocode="cd ~/Desktop/Code"
 
 # zsh-completions
