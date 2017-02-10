@@ -109,7 +109,7 @@ export NVM_DIR=~/.nvm
 # eval "$(jenv init -)"
 
 # rbenv
-# eval "$(rbenv init -)"
+[[ `which rbenv` ]] && eval "$(rbenv init -)"
 
 # syntax highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
