@@ -106,7 +106,7 @@ alias zshconfig="$EDITOR ~/.zshrc"
 alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
 alias gotocode="cd ~/Desktop/Code"
 
-[[ `which rbenv` ]] && eval "$(rbenv init -)"
+[[ `command -v rbenv` ]] && eval "$(rbenv init -)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
