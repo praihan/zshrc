@@ -106,11 +106,12 @@ alias zshconfig="$EDITOR ~/.zshrc"
 alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
 alias gotocode="cd ~/Desktop/Code"
 
+# Load rbenv
 [[ `command -v rbenv` ]] && eval "$(rbenv init -)"
 
+# Load nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-  source /etc/profile.d/vte.sh
-fi
+# Load jenv
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
